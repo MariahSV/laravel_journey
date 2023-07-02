@@ -1,4 +1,8 @@
-========================== DICIONÁRIO:
+# ESTUDOS DE LARAVEL
+
+---
+## DICIONÁRIO:
+---
 ACL: access control list; sistema de acessos de conteúdos com uso de usuário
 
 Arquitetura MVC: padrão de arquitetura de software que melhora a conexão entre as camadas de dados, lógica de negócio e interação com usuário; sendo as 3 camadas: Model, Controller e View.
@@ -18,21 +22,29 @@ app > http > routes
 
 Migrate: migrações ou tabelas de dados criadas com php
 
-========================== REQUISITOS:
+---
+## REQUISITOS:
+---
 - PHP
 - Composer para o PHP
 - sempre averiguar compatibilidade entre linguagem (no caso PHP) e framework (no caso laravel), bem como respectivas versões com LTS (nem tão velhas, nem tão novas, e ainda recebendo atualização)
 
-========================== CONFERINDO VERSÕES:
+---
+## CONFERINDO VERSÕES:
+---
 - [ php -v ] no prompt de comando: versão do PHP
 - [ php artisan -V ] no prompt de comando: versão do laravel
 
-========================== INSTALAÇÃO:
+---
+## INSTALAÇÃO:
+---
 - pode seguir o tutorial nas documentações
 -- via composer: pró, vai mais rápido; contra, pode ser que o próprio composer esteja desatualizado, exige mais informações para configurar o ambiente.
 -- via composer, mas definindo versão do laravel; método recomendado.
 
-========================== INSTALANDO / CRIANDO NOVO PROJETO
+---
+## INSTALANDO / CRIANDO NOVO PROJETO
+---
 - Criar diretório e/ou acessar pasta desejada via CMD (prompt de comando)
 - instalar laravel via composer como indicado na documentação da versão escolhida
 - inicializar servidor php [comando abaixo]
@@ -43,8 +55,9 @@ Migrate: migrações ou tabelas de dados criadas com php
 - principal diretório a ser usado: pasta APP
 - root, js e css: em PUBLIC
 
-
-========================== COMANDOS
+---
+## COMANDOS
+---
 - cls >> limpa prompt de comando no Windows
 - php artisan >> lista todos os comandos do artisan
 - php artisan help comando >> explica como funciona o comando escrito
@@ -73,13 +86,16 @@ Migrate: migrações ou tabelas de dados criadas com php
 		<input type="text" name="nome" placeholder="Nome / PUT">
 		<button>Enviar</button>
 	</form> ||| resultado: ao enviar o formulário, direciona para uma página com o texto definido nas rotas [Contato PUT]
-========================== OBSERVAÇÕES
+
+---
+## OBSERVAÇÕES
+---
 - Há arquivos específicos para funções que afetem APIs, comandos de console e as páginas web.
 - localhost:8000/contato >> endereço ou rota ou comando para acessar página Contato; para tal é necessário que exista o arquivo-Blade "contato.blade.php" e respectivo conteúdo, e uma rota para imprimir este arquivo no browser. 
 - o laravel possui um sistema de segurança para inputs, que sempre devem possuir um gerador de token: {{ carf_field() }} ; que pela documentação do laravel, serve como uma "sigla" para as chaves do php [<?php php>] e comando Echo >> se usar inspecionar na tela deve encontrar a seguinte linha [<input type="hidden" name="_token" value="..token com letras e números..">]
 - usando o artisan: obrigatório estar dentro do diretório raiz do projeto, onde fica o arquivo do artisan, para usar o console de comandos, ex: [c:\pastas..\estudos_laravel\projeto1]
 
 
-============
+---
 CONTINUAR AQUI >> aula 6/26
-https://www.udemy.com/course/introducao-ao-laravel-53/learn/lecture/6718262#notes
+<https://www.udemy.com/course/introducao-ao-laravel-53/learn/lecture/6718262#notes>
